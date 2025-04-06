@@ -39,7 +39,7 @@
           document.getElementById("goal").value = opgeslagenGoal;
         }
         berekenGoal();
-    }
+    }):
 // --- Boekcovers vinden ------------------------------------
 // --- Bron: https://github.com/w3slley/bookcover-api --------------------------------
 //     Deze bron heb ik gebruikt omdat deze optie geen API key nodig had.
