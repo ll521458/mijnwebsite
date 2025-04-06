@@ -25,7 +25,7 @@ nav ul li a:hover {
   background-color: #ddd;
 }
 
-.dropdown-informatie {
+.dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -36,11 +36,11 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-.dropdown-informatie li {
+.dropdown-content li {
   display: block;
 }
 
-.dropdown:hover .dropdown-informatie {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
