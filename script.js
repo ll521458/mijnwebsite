@@ -27,19 +27,23 @@
     
 // ---- de boeken op geheugen zetten, zodat de gebruiker niet steeds opnieuw al zijn boeken moet invullen ---
 // ---- hulpbron: https://dev.to/anshuman_bhardwaj/the-right-way-to-use-localstorage-in-javascript-41a0 -----
-    function loadBoekenFromLocalStorage() {
-        let geheugenBoeken = localStorage.getItem("boeken");
-        if (geheugenBoeken) { // als er boeken in het geheugen zitten, dan worden ze displayed en de boekengoal wordt dan berekend.
-            boeken = JSON.parse(geheugenBoeken);
-            displayBoeken();
-        }
-        document.addEventListener("DOMContentLoaded", function() {
-        let opgeslagenGoal = localStorage.getItem("boekenGoal"); // slaat het boekengoal op
-        if (opgeslagenGoal) {
-          document.getElementById("goal").value = opgeslagenGoal;
-        }
-        berekenGoal();
-    }):
+document.addEventListener("DOMContentLoaded", function() {
+    loadBoekenFromLocalStorage();
+    let opgeslagenGoal = localStorage.getItem("boekenGoal"); // slaat het boekengoal op
+    if (opgeslagenGoal) {
+        document.getElementById("goal").value = opgeslagenGoal;
+    }
+    berekenGoal();
+});
+
+function loadBoekenFromLocalStorage() {
+    let geheugenBoeken = localStorage.getItem("boeken");
+    if (geheugenBoeken) { // als er boeken in het geheugen zitten, dan worden ze displayed en de boekengoal wordt dan berekend.
+        boeken = JSON.parse(geheugenBoeken);
+        displayBoeken();
+    }
+}
+
 // --- Boekcovers vinden ------------------------------------
 // --- Bron: https://github.com/w3slley/bookcover-api --------------------------------
 //     Deze bron heb ik gebruikt omdat deze optie geen API key nodig had.
