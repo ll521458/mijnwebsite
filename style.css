@@ -25,6 +25,89 @@ nav ul li a:hover {
   background-color: #ddd;
 }
 
+/* Algemeen uiterlijk voor de pagina */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* De stijl voor je navigatie en dropdown menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Dropdown menu-stijl */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+/* Material Icon styling */
+.material-icons {
+  vertical-align: middle; /* Zorgt ervoor dat het icoon goed uitlijnt met de tekst */
+  margin-right: 10px; /* Geeft wat ruimte tussen het icoon en de tekst */
+  font-size: 24px; /* Zorgt voor een grotere weergave van het icoon */
+}
+
+.dropdownknop {
+  display: flex;
+  align-items: center; /* Zorgt ervoor dat het icoon en de tekst goed uitgelijnd zijn */
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdownknop:hover {
+  background-color: #555;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
