@@ -110,18 +110,17 @@ html, body {
   background-color: #0056b3;
 }
 
-.boek-cover {
-  width: 100%; 
+img {
+  width: 100%;
   height: auto;
-  border-radius: 10px; /* hoek afgerond, want is mooier */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow met 0.2 opacity */
-  transition: box-shadow 0.3s ease-in-out; /* voor mooi effect ;p  */
+  border-radius: 10px; /*  afgeronde hoekenwant mooier */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* schaduw op afbeeldingen */
+  transition: box-shadow 0.3s ease-in-out; /*  overgang naar hover */
 }
 
-.boek-cover:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* diepere schaduw als je hovert */
+img:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* schaduw forser bij hover */
 }
-
 
 
 /*bron:https://www.w3schools.com/Css/css_dropdowns.asp en https://stackoverflow.com/questions/52690049/html-drop-down-menu*/
