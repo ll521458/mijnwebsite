@@ -58,7 +58,7 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* Dropdown menu-stijl */
+/* dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -89,16 +89,16 @@ nav ul li a:hover {
   background-color: #ddd;
 }
 
-/* Material Icon styling */
+/* icon*/
 .material-icons {
-  vertical-align: middle; /* Zorgt ervoor dat het icoon goed uitlijnt met de tekst */
-  margin-right: 10px; /* Geeft wat ruimte tussen het icoon en de tekst */
-  font-size: 24px; /* Zorgt voor een grotere weergave van het icoon */
+  vertical-align: middle; 
+  margin-right: 10px; 
+  font-size: 24px; 
 }
 
 .dropdownknop {
   display: flex;
-  align-items: center; /* Zorgt ervoor dat het icoon en de tekst goed uitgelijnd zijn */
+  align-items: center; 
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -108,35 +108,58 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f9f9f9;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content li {
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .playfair-display-title {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <700>;
+  font-weight: 700;
   font-style: normal;
 }
 
 .playfair-display-subtitle {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <400>;
+  font-weight: 400;
   font-style: normal;
+}
+
+/* algmeen */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* voor de tabel ding */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="date"], textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
