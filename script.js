@@ -183,10 +183,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
         let boekenTelezen = goal - boekenGelezen;
         let percentage = (boekenGelezen / goal) * 100;
-
-        document.getElementById("progressbar").style.width = percentage + "%";
-        document.getElementById("percentage").textContent = percentage.toFixed(2) + "%";
-        
         let boekengoal = document.getElementById("boekengoal");
         if (boekenGelezen === 0) {
             boekengoal.innerHTML = `Je hebt nog geen boeken gelezen in ${huidigJaar}, begin snel!`;
