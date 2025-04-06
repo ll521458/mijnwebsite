@@ -79,49 +79,92 @@ html, body {
   align-items: center;
 }
 
-#boekenlijst li .boek-info {
-  flex: 1;
-  font-size: 1em;
+#boekenlijst {
+  list-style-type: none;
+  padding: 0;
 }
 
-#boekenlijst li button {
-  background-color: #dc3545;
-  color: white;
-  padding: 8px 12px;
-  border: none;
+#boekenlijst li {
+  background-color: #faf7fe;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #6a687e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.boek-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.boek-cover {
+  width: 100px; /* Stel een vaste breedte in voor de cover */
+  height: 150px; /* Stel een vaste hoogte in voor de cover */
+  margin-right: 15px; /* Ruimte tussen de cover en de tekst */
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9em;
+  object-fit: cover; /* Zorgt ervoor dat de afbeelding mooi schaalt */
 }
 
-#boekenlijst li button:hover {
-  background-color: #c82333;
+.boek-tekst {
+  flex: 1;
 }
 
-.bewerk-button, .verwijder-button {
-  margin-left: 10px;
+.boek-titel {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
 }
 
-.bewerk-button {
-  background-color: #007bff;
+.boek-auteur {
+  font-size: 1em;
+  color: lightgray;
+  margin-top: 5px;
 }
 
-.bewerk-button:hover {
-  background-color: #0056b3;
+.boek-review-container {
+  margin-top: 10px;
+}
+
+.boek-review {
+  font-size: 1em;
+  color: #333;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /*  afgeronde hoekenwant mooier */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* schaduw op afbeeldingen */
-  transition: box-shadow 0.3s ease-in-out; /*  overgang naar hover */
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 img:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* schaduw forser bij hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Schaduw bij hover */
 }
 
+/* Knoppen */
+#boekForm button {
+  background-color: #afb4c7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#boekForm button:hover {
+  background-color: #6a687e;
+}
+
+#annulerenKnop {
+  background-color: #d2d3d8;
+}
+
+#annulerenKnop:hover {
+  background-color: ##b6b7bb;
+}
 
 /*bron:https://www.w3schools.com/Css/css_dropdowns.asp en https://stackoverflow.com/questions/52690049/html-drop-down-menu*/
 nav ul { 
