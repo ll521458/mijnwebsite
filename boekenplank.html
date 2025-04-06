@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Boekenplankje</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Mijn Boekenplankje</h1>
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="boekenplank.html">Boekenplank</a></li>
+        <li><a href="boekengoal.html">Boekengoal</a></li>
+      </ul>
+    </nav>
+    </header>
 
+    <main>
+      <section>
+        <h2>Voeg een boek toe aan je boekenplank</h2>
+         <form id="boekForm">
+           <label for="titel">Boektitel:</label>
+           <input type="text" id="titel" name="titel" required>
+           <br><br>
+           
+           <label for="auteur">Auteur:</label>
+           <input type="text" id="auteur" name="auteur" required>
+           <br><br>
+           
+           <label for ="begonnen">Datum begonnen:</label>  
+           <input type="date" id="begonnen" name="begonnen">
+           <br><br>
+           
+           <label for ="uitgelezen">Datum uitgelezen:</label>  
+           <input type="date" id="uitgelezen" name="uitgelezen"> 
+           <br><br>
+           
+           <label for="review">Review: </label>
+           <textarea id= "review" name="review"></textarea>
+           <br><br>
+           
+           <input type="hidden" id="boekIndex">
+           <button type="submit" id="opslaanKnop">Zet op de boekenplank</button>
+           <button type="button" id="annulerenKnop">Annuleren</button>
+         </form>
+      </section>
+      <section>
+        <h2>Boekenplankje</h2>
+        <ul id="boekenlijst"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mijn Boekenplankje</p>
+    </footer>
+    
+  </body>
+</html>
+    
