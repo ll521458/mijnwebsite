@@ -30,7 +30,7 @@ console.log("Script geladen");
             document.getElementById("boekForm").reset();
             document.getElementById("boekIndex").value = "";
         });
-    });
+    }
     
 // ---- de boeken op geheugen zetten, zodat de gebruiker niet steeds opnieuw al zijn boeken moet invullen ---
 // ---- hulpbron: https://dev.to/anshuman_bhardwaj/the-right-way-to-use-localstorage-in-javascript-41a0 -----
