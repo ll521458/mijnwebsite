@@ -82,6 +82,7 @@ function loadBoekenFromLocalStorage() {
           let boek = { titel, auteur, begonnen, uitgelezen, review, coverUrl };
           boeken.push(boek);
       }
+      console.log(boeken);
       // W3S
       localStorage.setItem("boeken", JSON.stringify(boeken));
       document.getElementById("boekForm").reset()
