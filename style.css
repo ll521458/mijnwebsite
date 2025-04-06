@@ -127,10 +127,16 @@ nav ul li a:hover {
   display: block;
 }
 
-.playfair-display-<uniquifier> {
+.playfair-display-title {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <700>;
   font-style: normal;
 }
 
+.playfair-display-subtitle {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+}
