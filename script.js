@@ -27,14 +27,6 @@
     
 // ---- de boeken op geheugen zetten, zodat de gebruiker niet steeds opnieuw al zijn boeken moet invullen ---
 // ---- hulpbron: https://dev.to/anshuman_bhardwaj/the-right-way-to-use-localstorage-in-javascript-41a0 -----
-document.addEventListener("DOMContentLoaded", function() {
-    loadBoekenFromLocalStorage();
-    let opgeslagenGoal = localStorage.getItem("boekenGoal"); // slaat het boekengoal op
-    if (opgeslagenGoal) {
-        document.getElementById("goal").value = opgeslagenGoal;
-    }
-    berekenGoal();
-});
 
 function loadBoekenFromLocalStorage() {
     let geheugenBoeken = localStorage.getItem("boeken");
