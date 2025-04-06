@@ -1,3 +1,4 @@
+console.log("Script geladen");
 
     let boeken = [];
     let huidigJaar;
