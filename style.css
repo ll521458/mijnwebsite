@@ -2,3 +2,45 @@ html {
   height: 100%;
   width: 100%;
 }
+/*bron:https://www.w3schools.com/Css/css_dropdowns.asp en https://stackoverflow.com/questions/52690049/html-drop-down-menu*/
+nav ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-informatie {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-informatie li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-informatie {
+  display: block;
+}
+
