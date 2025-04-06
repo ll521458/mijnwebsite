@@ -169,7 +169,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // ----------------------------- Functie voor boek verwijderen  -----------------------
-    
     function verwijderBoek(index) { 
         boeken.splice(index, 1); // Verwijder het boek uit de array W3S
         localStorage.setItem("boeken", JSON.stringify(boeken)); // Update geheugen na het verwijderen
