@@ -25,12 +25,15 @@ console.log("Script geladen");
                 addBoek(event);
                 berekenGoal();
             });
-
-        document.getElementById("annulerenKnop").addEventListener("click", function() {
-            document.getElementById("boekForm").reset();
-            document.getElementById("boekIndex").value = "";
-        });
-    }
+            
+            let annulerenKnop = document.getElementById("annulerenKnop");
+            if (annulerenKnop) {
+                annulerenKnop.addEventListener("click", function () {
+                    document.getElementById("boekForm").reset();
+                    document.getElementById("boekIndex").value = "";
+                });
+            }
+        }
     
 // ---- de boeken op geheugen zetten, zodat de gebruiker niet steeds opnieuw al zijn boeken moet invullen ---
 // ---- hulpbron: https://dev.to/anshuman_bhardwaj/the-right-way-to-use-localstorage-in-javascript-41a0 -----
