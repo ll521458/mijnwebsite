@@ -6,21 +6,25 @@ console.log("Script geladen");
 // --- Huidig jaar instellen (W3S) ------------------------------------
     document.addEventListener("DOMContentLoaded", function() {
         huidigJaar = new Date().getFullYear();
-        console.log(document.getElementById("huidigJaar"));
+        
         let jaarElement = document.getElementById("huidigJaar");
         if (jaarElement) {
             jaarElement.textContent = huidigJaar;
         }
-        berekenGoal();
-        loadBoekenFromLocalStorage();
-// --- Eventlisteners (W3S) ------------------------------------
-        document.getElementById("boekForm").addEventListener("submit", function(event) {
-            event.preventDefault(); 
-            addBoek(event);
+        if (document.getElementById("goal")) {
             berekenGoal();
-        });
-
-        document.getElementById("goal").addEventListener("input", berekenGoal);
+            document.getElementById("goal").addEventListener("input", berekenGoal);
+        }
+        
+// --- Eventlisteners (W3S) ------------------------------------
+        if (document.getElementById("boekForm")) {
+            loadBoekenFromLocalStorage();
+            
+            document.getElementById("boekForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                addBoek(event);
+                berekenGoal();
+            });
 
         document.getElementById("annulerenKnop").addEventListener("click", function() {
             document.getElementById("boekForm").reset();
