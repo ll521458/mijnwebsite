@@ -33,7 +33,7 @@
             boeken = JSON.parse(geheugenBoeken);
             displayBoeken();
         }
-      
+        document.addEventListener("DOMContentLoaded", function() {
         let opgeslagenGoal = localStorage.getItem("boekenGoal"); // slaat het boekengoal op
         if (opgeslagenGoal) {
           document.getElementById("goal").value = opgeslagenGoal;
