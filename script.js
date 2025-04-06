@@ -6,7 +6,8 @@ console.log("Script geladen");
 // --- Huidig jaar instellen (W3S) ------------------------------------
     
     document.addEventListener("DOMContentLoaded", function() {
-        let huidigJaar = new Date().getFullYear();
+        huidigJaar = new Date().getFullYear();
+        console.log(document.getElementById("huidigJaar"));
         document.getElementById("huidigJaar").textContent = huidigJaar;
         berekenGoal();
         loadBoekenFromLocalStorage();
