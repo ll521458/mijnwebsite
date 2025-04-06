@@ -4,14 +4,15 @@ console.log("Script geladen");
     let huidigJaar;
 
 // --- Huidig jaar instellen (W3S) ------------------------------------
-    window.onload = function() {
     document.addEventListener("DOMContentLoaded", function() {
         huidigJaar = new Date().getFullYear();
         console.log(document.getElementById("huidigJaar"));
-        document.getElementById("huidigJaar").textContent = huidigJaar;
+        let jaarElement = document.getElementById("huidigJaar");
+        if (jaarElement) {
+            jaarElement.textContent = huidigJaar;
+        }
         berekenGoal();
         loadBoekenFromLocalStorage();
-    }
 // --- Eventlisteners (W3S) ------------------------------------
         document.getElementById("boekForm").addEventListener("submit", function(event) {
             event.preventDefault(); 
