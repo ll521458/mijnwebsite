@@ -25,14 +25,15 @@ nav ul li a:hover {
   background-color: #ddd;
 }
 
-/* Algemeen uiterlijk voor de pagina */
+/* algemeen */
 body {
+  overflow-y: scroll; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* De stijl voor je navigatie en dropdown menu */
+/* dropdown menu */
 nav ul {
   list-style-type: none;
   margin: 0;
