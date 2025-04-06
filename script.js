@@ -1,5 +1,4 @@
-<script> 
-  
+
     let boeken = [];
     let huidigJaar;
 
@@ -197,5 +196,4 @@
       }
       localStorage.setItem("boekenGoal", goal.toString()); // boekengoal opslaan in localstorage
     }
-    
- </script>
+
